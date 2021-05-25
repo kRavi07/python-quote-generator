@@ -24,7 +24,7 @@ Download the zip file of this project or use git clone command  to clone this re
 Open your terminal. 
 Go to directory where you extracted the zip file
    
-Now run command pip install -r requirements.txt  to download all required package for this tool.
+Now run command **pip install -r requirements.txt**  to download all required package for this tool.
 ```
 
 ## Usage
