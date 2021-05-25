@@ -1,10 +1,10 @@
-<h1 align="center">Welcome to Python Quote Generator -a CLI tool 👋</h1>
+<h1 align="center">Welcome to Python Quote Generator - A CLI tool 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/.svg">
+    https://img.shields.io/badge/Python-v3-green
   </a>
   <a href="https://twitter.com/kkRavi0" target="_blank">
-    <img alt="Twitter: kkRavi0" src="https://img.shields.io/twitter/follow/kkRavi0.svg?style=social" />
+    <img alt="Twitter: kkRavi0" src="https://img.shields.io/twitter/follow/kRavi0.svg?style=social" />
   </a>
 </p>
 
@@ -13,16 +13,21 @@
 ## Install
 
 ```sh
- You must have installed python on your system or install if not installed .  Check if pip installed or not using pip -V command else install pip(a python package manger) by using command python get-pip.py.
-Download the zip file of this project or use git clone to clone this repositry on your system. 
-Go to directory where you extracted the zip file   
-Now run comman pip install -r requirements.txt  to download all required package for this tool.
+ You must have installed python on your system or install if not installed .  
+Check if pip installed or not using pip -V command else,
+install pip(a python package manger) by using command python get-pip.py.
+
+Download the zip file of this project or use git clone to clone this repositry on your system.
+Open your terminal. 
+Go to directory where you extracted the zip file
+   
+Now run command pip install -r requirements.txt  to download all required package for this tool.
 ```
 
 ## Usage
 
 ```sh
- Goto directory where you extracted or cloned the project , now run  python quote.py 
+ Goto directory where you extracted or cloned the project , now run command  python quote.py 
 ```
 
 ## Run tests
