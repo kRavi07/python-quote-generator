@@ -20,7 +20,7 @@ You must have installed python on your system or install if not installed .
 Check if pip installed or not using "pip -V" command else,
 install pip(a python package manger) by using command "python get-pip.py".
 
-Download the zip file of this project or use git clone to clone this repositry on your system.
+Download the zip file of this project or use git clone command  to clone this repository on your system.
 Open your terminal. 
 Go to directory where you extracted the zip file
    
