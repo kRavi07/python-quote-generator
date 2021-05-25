@@ -6,7 +6,7 @@
   <a href="https://twitter.com/kRavi0" target="_blank">
     <img alt="Twitter: kkRavi0" src="https://img.shields.io/twitter/follow/kRavi0.svg?style=social" />
   </a>
-  <a href="https://twitter.com/kRavi0" target="_blank">
+  <a href="https://linkedin.com/in/kravi07" target="_blank">
     <img alt="Twitter: kkRavi0" src="https://img.shields.io/badge/LinkedIn-kravi07-blue" />
   </a>
 </p>
