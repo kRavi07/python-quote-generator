@@ -1,10 +1,13 @@
 <h1 align="center">Welcome to Python Quote Generator - A CLI tool 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/" target="_blank">
-    https://img.shields.io/badge/Python-v3-green
+  <a href="python.org" target="_blank">
+    <img alt="Python-v3" src="https://img.shields.io/badge/Python-v3-green"/>
   </a>
-  <a href="https://twitter.com/kkRavi0" target="_blank">
+  <a href="https://twitter.com/kRavi0" target="_blank">
     <img alt="Twitter: kkRavi0" src="https://img.shields.io/twitter/follow/kRavi0.svg?style=social" />
+  </a>
+  <a href="https://twitter.com/kRavi0" target="_blank">
+    <img alt="Twitter: kkRavi0" src="https://img.shields.io/badge/LinkedIn-kravi07-blue" />
   </a>
 </p>
 
@@ -13,9 +16,9 @@
 ## Install
 
 ```sh
- You must have installed python on your system or install if not installed .  
-Check if pip installed or not using pip -V command else,
-install pip(a python package manger) by using command python get-pip.py.
+You must have installed python on your system or install if not installed .  
+Check if pip installed or not using "pip -V" command else,
+install pip(a python package manger) by using command "python get-pip.py".
 
 Download the zip file of this project or use git clone to clone this repositry on your system.
 Open your terminal. 
@@ -40,7 +43,7 @@ python quote.py
 
 👤 **Ravi Kant Kumar**
 
-* Twitter: [@kkRavi0](https://twitter.com/kkRavi0)
+* Twitter: [@kkRavi0](https://twitter.com/kRavi0)
 * Github: [@kravi07](https://github.com/kravi07)
 * LinkedIn: [@kravi07](https://linkedin.com/in/kravi07)
 
