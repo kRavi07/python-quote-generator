@@ -49,7 +49,7 @@ python quote.py
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if your love this project !
 
 ***
 _This tool is created  with ❤️ by Ravi Kant Kumar (https://github.com/kravi07)_
