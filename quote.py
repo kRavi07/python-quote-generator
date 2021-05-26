@@ -94,7 +94,7 @@ def main():
     while op!="N":
         print("[bold cyan]More Quote ? Y/N")
         op=input();
-        if(op=="Y"or op=="y"):
+        if(op.upper()=="Y"):
             count=console.input("[bold red]How many quotes you want to listen?Please Enter ")
             count=int(count)
             pg+=1
