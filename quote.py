@@ -11,7 +11,7 @@ from rich.padding import Padding
 from rich import box
 import sys
 import random
-
+import pyfiglet
 
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
@@ -33,6 +33,8 @@ def speak(audio):
 console=Console()
 console.rule("[bold red]Python Quote Generator")
 
+result = pyfiglet.figlet_format("Welcome To Python Quote Tool", font = "small" )
+print(result)
 
 with Progress() as progress:
 
@@ -41,46 +43,61 @@ with Progress() as progress:
         progress.update(task1, advance=0.5)
         sleep(0.02)
 
-def getQuote(pg):
-    page = requests.get(
-            "http://quotes.toscrape.com/page/"+str(pg)+"/")
-    soup = BeautifulSoup(page.content, 'html.parser')
-    quote = soup.find_all(class_='quote')
+def getQuote(pg,count):
     try:
+        
+        page = requests.get(
+                "https://www.goodreads.com/quotes?page="+str(pg))
+        soup = BeautifulSoup(page.content, 'html.parser')
+        quote = soup.find_all(class_='quote')
+        cnt=1;
 
         for q in quote:
-                quote_text=q.find('span',class_='text')
-                authors=q.find('small',class_='author')
-                quote=quote_text.text
-                author=authors.text
-                print(Panel.fit("[bold]"+quote+"[cyan] By ~[/cyan] "+"[italic yellow]"+author))
-                speak(quote)
-                speak("this quote was said by"+author);
-    except KeyboardInterrupt:
-        exit(0)
+                    if(cnt>count):
+                        break
+                    quote_text=q.find('div',class_='quoteText')
+                    authors=q.find('span',class_='authorOrTitle')
+                    quote=quote_text.text
+                    author=authors.text
+                    author=author.split(' " ',1)[0]
+                    if(len(quote)>400):
+                        continue
+                    print(Panel.fit("[bold yellow]"+quote))
+                    
+                    speak(quote)
+                    
+                    cnt+=1
+    except (KeyboardInterrupt, SystemExit):
+        print("Thanks")
+        sys.exit()
         
 
 
 
 def main():
+    speak("Welcome to Python Quote Generator tool ! Thanks for using this tool.")
+    count=console.input("[bold red]How many quotes you want to listen?Please Enter  ")
+    count=int(count)
     pg=random.randint(1,5)
-    getQuote(pg)
+    getQuote(pg,count)
     op=''
 
     while op!="N":
         print("[bold cyan]More Quote ? Y/N")
         op=input();
         if(op=="Y"or op=="y"):
-                
+            count=console.input("[bold red]How many quotes you want to listen?Please Enter ")
+            count=int(count)
             pg+=1
-            if(pg>10):
-                print("Thanks ! Thats all for today");
-            getQuote(pg)
+            
+            getQuote(pg,count)
         else:
                 break;
-    tk=("Thanks for using Quote CLI. If You Like this tool please Give star on https://github.com/kRavi07/python-quote-cli ")
+    tk=("Thanks for using Python Quote Generator tool. If You Like this tool please Give star on https://github.com/kRavi07/python-quote-cli ")
     print(Panel("[bold green]"+tk))
-    print("[bold yellow]Created By Ravi Kant Kumar ")     
+    speak(tk)
+    print("[bold yellow]This tool is Created By Ravi Kant Kumar ")
+    speak("This tool is Created By Ravi Kant Kumar ")     
     
     
 
