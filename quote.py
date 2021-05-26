@@ -76,8 +76,17 @@ def getQuote(pg,count):
 
 def main():
     speak("Welcome to Python Quote Generator tool ! Thanks for using this tool.")
-    count=console.input("[bold red]How many quotes you want to listen?Please Enter  ")
-    count=int(count)
+    while True:
+        try:
+            count=int(console.input("[bold red]How many quotes you want to listen?Please Enter  "))
+            if count <=0:
+                print('Please Enter Number Greater Than 0')
+                continue
+            break
+        except:
+            print("[bold red]Give me Only Number Please")
+            
+        
     pg=random.randint(1,5)
     getQuote(pg,count)
     op=''
