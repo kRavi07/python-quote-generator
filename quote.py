@@ -95,8 +95,14 @@ def main():
         print("[bold cyan]More Quote ? Y/N")
         op=input();
         if(op.upper()=="Y"):
-            count=console.input("[bold red]How many quotes you want to listen?Please Enter ")
-            count=int(count)
+                try:
+                    count=int(console.input("[bold red]How many quotes you want to listen?Please Enter  "))
+                    if count <=0:
+                        print('Please Enter Number Greater Than 0')
+                        continue
+                    break
+                except:
+                    print("[bold red]Give me Only Number Please")
             pg+=1
             
             getQuote(pg,count)
