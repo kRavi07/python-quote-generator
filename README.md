@@ -44,7 +44,7 @@ python quote.py
 
 👤 **Ravi Kant Kumar**
 
-* Twitter: [@kkRavi0](https://twitter.com/kRavi0)
+* Twitter: [@kRavi0](https://twitter.com/kRavi0)
 * Github: [@kravi07](https://github.com/kravi07)
 * LinkedIn: [@kravi07](https://linkedin.com/in/kravi07)
 
