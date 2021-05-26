@@ -54,3 +54,5 @@ Give a ⭐️ if this project helped you!
 
 ***
 _This tool is created  with ❤️ by Ravi Kant Kumar (https://github.com/kravi07)_
+
+The quotes are fecthed from [Goodreads](https://www.goodreads.com/quotes)
